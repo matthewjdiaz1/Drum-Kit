@@ -29,18 +29,12 @@ class App extends React.Component {
       ]
     }
     this.mapDrumSet = this.mapDrumSet.bind(this);
-    this.handleKeyPress = this.handleKeyPress.bind(this);
-  }
-
-  handleKeyPress() {
-    ///////////////////
-    // TODO - send keypress this.state.keys[index] to button thru props?
   }
 
   mapDrumSet(sound, index) {
     return (
       <div key={index}>
-        <Button sound={sound} keyboard={this.state.keys[index]} handleKeyPress={this.handleKeyPress()} />
+        <Button sound={sound} keyPressed={this.state.keys[index]} />
       </div>
     )
   }
