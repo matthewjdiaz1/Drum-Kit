@@ -9,6 +9,13 @@ class Button extends React.Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleKeyDown = this.handleKeyDown.bind(this);
   }
+
+  //////////////////////////
+  // TODO - instead of sending thru props, perhaps component mounting would 
+  // listen always and would be able to activate the handle slick with a 
+  // switch statement
+  ///////////////////////////
+
   // componentDidMount() {
   //   document.addEventListener("keydown", this.handleKeyDown, false);
   // }
