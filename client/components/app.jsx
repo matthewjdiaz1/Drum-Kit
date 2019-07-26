@@ -29,6 +29,7 @@ class App extends React.Component {
       ]
     }
     this.mapDrumSet = this.mapDrumSet.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
   mapDrumSet(sound, index) {
@@ -38,6 +39,7 @@ class App extends React.Component {
       </div>
     )
   }
+
   render() {
     return (
       <div className="drumkit-container">
