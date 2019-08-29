@@ -16,6 +16,19 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+      {
+        test: /\.(jpe?g|png|gif|svg|mp4)$/i,
+        use: 'file-loader'
+      },
+      {
+        test: /\.(ogg|mp3|wav|mpe?g)$/i,
+        use: 'file-loader'
+      },
+      // {
+      //   test: /\.mp3$/,
+      //   include: path.resolve(__dirname, 'public'),
+      //   loader: 'file-loader'
+      // },
     ],
   },
   resolve: {
